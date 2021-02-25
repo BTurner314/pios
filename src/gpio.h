@@ -1,13 +1,12 @@
-#include <stdio.h>
+#ifndef FUNCTIONS_H_INCLUDED
+#define FUNCTIONS_H_INCLUDED
 
-void main {
-}
+void led_init();
 
-void led_init(){
-}
+void led_on();
 
-void led_on(){
-}
+void led_off();
 
-void led_off(){
-}
+void delay();
+
+#endif

@@ -1,5 +1,6 @@
 
 #include <stdio.h>
+#include "gpio.h"
 
 unsigned int *gpset1 = 0xFE200020;
 unsigned int *gpsel4 = 0xFE200010;
@@ -19,3 +20,9 @@ void led_on(){
 void led_off(){
 	*gpclr1 = (1 << 10);
 }
+ void delay(){
+	int c, d;
+	for (c = 1; c <= 32767; c++)
+		for (d = 1; d <= 32767; d++)
+		{}
+ }
