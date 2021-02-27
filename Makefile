@@ -16,6 +16,8 @@ OBJS = \
 	boot.o \
 	kernel_main.o \
 	gpio.o \
+	serial.o \
+	rprintf.o \
 	
 
 
