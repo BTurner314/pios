@@ -1,6 +1,6 @@
 import random
 
-size = 8
+size = int(input("Size of Array: "))
 disk_size = 200
 
 # C-SCAN Disk Scheduling Algorithm
@@ -140,9 +140,12 @@ def RSS(array, head):
 
 
         
-array = [23, 112, 30, 62, 192, 11, 49, 82]
+array = []
 head = 50
 
+for i in range(size):
+    array.append(int(input("Enter a value: ")))
+    
 FCFS(array, head)
 CSCAN(array, head)
 SSTF(array, head)
