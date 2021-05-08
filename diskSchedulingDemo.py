@@ -144,7 +144,7 @@ array = []
 head = 50
 
 for i in range(size):
-    array.append(int(input("Enter a value: ")))
+     array.append(random.randint(0 , disk_size))
     
 FCFS(array, head)
 CSCAN(array, head)
